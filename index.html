@@ -4,29 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="style.css">
-<title>BEU Online Boutique</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>BEU Online Boutique</title>
 </head>
 <body>
     <nav>
-        <div class="navTop">
-            <div class="navitem">
-              <img src="images/beu transparent-01.png" alt="BEU Logo" class="logo"></div>
-               <div class="navitem">
-                <div class="search">
-                    <input type="text" placeholder="Search..." class="searchInput">
-                    <img src="images/search icon.png" width="20" height="20" alt="" class="searchicon">
-                </div>
+        <div class="nav-container">
+            <div class="logo-text">BEU</div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search products..." class="search-input">
+                <img src="images/search icon.png" width="20" height="20" alt="Search" class="search-icon">
             </div>
-               <div class="navitem">
-                <span class="limitedoffer">Limited Offer!</span>
-               </div>
+            
+            <div class="limited-offer">Limited Offer!</div>
+            
+            <div class="nav-menu">
+                <div class="menu-item">Women's Fashion</div>
+                <div class="menu-item">Men's Fashion</div>
+                <div class="menu-item">Kid's Wear</div>
+                <div class="menu-item">Shoes & Footwear</div>
+                <div class="menu-item">Accessories</div>
             </div>
         </div>
-        <div class="navBottom"></div>
     </nav>
 
+    <div class="slider">
+        <div class="slider-wrapper">
+            <div class="slide active">
+                <img src="images/woman slider no bg.png" alt="Women's Fashion" class="slide-img">
+                <div class="slide-content">
+                    <h1 class="slide-title">Authentic <br> Fashion</h1>
+                    <h2 class="slide-price">KSH3000</h2>
+                    <button class="btn btn-primary">BUY NOW</button>
+                </div>
+            </div>
+            
+            <div class="slide">
+                <img src="images/men wear no bg.png" alt="Men's Fashion" class="slide-img">
+                <div class="slide-content">
+                    <h1 class="slide-title">Men's <br> Fashion</h1>
+                    <h2 class="slide-price">KSH5000</h2>
+                    <button class="btn btn-primary">BUY NOW</button>
+                </div>
+            </div>
+            
+            <div class="slide">
+                <img src="images/girl kid png.png" alt="Kids Wear" class="slide-img">
+                <div class="slide-content">
+                    <h1 class="slide-title">Adorable <br> Kids</h1>
+                    <h2 class="slide-price">KSH1500</h2>
+                    <button class="btn btn-primary">BUY NOW</button>
+                </div>
+            </div>
+            
+            <div class="slide">
+                <img src="images/sneaker white no bg.png" alt="Shoes" class="slide-img">
+                <div class="slide-content">
+                    <h1 class="slide-title">Sneakers</h1>
+                    <h2 class="slide-price">KSH3000</h2>
+                    <button class="btn btn-primary">BUY NOW</button>
+                </div>
+            </div>
+            
+            <div class="slide">
+                <img src="images/green purse.png" alt="Accessories" class="slide-img">
+                <div class="slide-content">
+                    <h1 class="slide-title">Accessories</h1>
+                    <h2 class="slide-price">KSH1500</h2>
+                    <button class="btn btn-primary">BUY NOW</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Navigation Arrows -->
+        <button class="slider-nav prev">&#10094;</button>
+        <button class="slider-nav next">&#10095;</button>
+        
+        <!-- Indicators -->
+        <div class="slider-indicators"></div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
