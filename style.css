@@ -104,10 +104,12 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: var(--transition);
+   cursor: pointer;
   }
   
   .logo-text:hover {
     color: var(--accent);
+      
   }
   
   .search-bar {
@@ -230,7 +232,10 @@
   
   .slide-content {
     max-width: 45%;
-    color: white;
+    color: var(--accent);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     transform: translateX(-50px);
     opacity: 0;
     transition: var(--transition);
@@ -376,12 +381,13 @@
   /* ANIMATIONS */
   /* ================ */
   @keyframes float {
-    0% { transform: translateY(0px) rotate(0deg); }
-    50% { transform: translateY(-20px) rotate(2deg); }
-    100% { transform: translateY(0px) rotate(0deg); }
+    0% { transform: translateX(0px) rotate(0deg); }
+    50% { transform: translateX(-20px) rotate(5deg); }
+    100% { transform: translateX(20px) rotate(0deg); }
   }
   
   @keyframes fadeIn {
+    0% { opacity: 0; }
     from { opacity: 0; }
     to { opacity: 1; }
   }
