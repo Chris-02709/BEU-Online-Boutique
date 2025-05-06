@@ -132,6 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Searching for:', query);
     // This would typically filter products or redirect to a search results page
   }
+ 
   
   // Menu item hover effects
   const menuItems = document.querySelectorAll('.menu-item');

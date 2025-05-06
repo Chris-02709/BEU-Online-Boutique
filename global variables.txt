@@ -1,0 +1,21 @@
+/* ================ */
+/* GLOBAL RESET & VARIABLES */
+/* ================ */
+:root {
+    --primary: #6a11cb;
+    --secondary: #2575fc;
+    --accent: #ff4d6d;
+    --dark: #1a1a2e;
+    --light: #f8f9fa;
+    --gray: #e9ecef;
+    --text: #212529;
+    --text-light: #6c757d;
+    
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+    --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+    --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+    --shadow-xl: 0 20px 25px rgba(0,0,0,0.1);
+    
+    --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    --border-radius: 16px;
+  }
