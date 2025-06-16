@@ -1,16 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
     <title>BEU Online Boutique</title>
-</head>
-<body>
+    
+    </head>
+    <body>
     <nav>
+      auth-forms
         <div class="nav-container">
             <div class="logo-text">BEU</div>
             
@@ -32,104 +36,207 @@
                 <a href="login.html" class="login-btn">Login</a>
                 <a href="registration.html" class="register-btn">Register</a>
             </div>
+    <div class="nav-container">
+        <div class="logo-text">
+            <a href="index.html">BEU</a>           
         </div>
+        
+        <div class="search-bar">
+            <input type="text" placeholder="Search products..." class="search-input">
+            <img src="images/search icon.png" width="20" height="20" alt="Search" class="search-icon">
+main
+        </div>
+        
+        <div class="limited-offer">Limited Offer!</div>
+        
+  <div class="nav-menu">
+    <a href="index.html">Home</a>
+   <a href="products.html?category=women">Women's Fashion</a>
+  <a href="products.html?category=men">Men's Fashion</a>
+  <a href="products.html?category=kids">Kid's Wear</a>
+  <a href="products.html?category=footwear">Shoes & Footwear</a>
+  <a href="products.html?category=accessories">Accessories</a>
+</div>
+
+
+             <!-- cart button -->
+         <a href="my-cart.html" class="cart-btn">
+            <img src="images/cart icon.png" alt="Cart" class="cart-icon">
+            <span id="cart-count">0</span>
+        </a>
+   
+    </div>
     </nav>
 
-    <div class="slider">
-        <div class="slider-wrapper">
-            <div class="slide active">
-                <img src="images/women fashion/slider img 3.png" alt="Women's Fashion" class="slide-img">
-                <div class="slide-content">
-                    <h1 class="slide-title">Authentic <br> Fashion</h1>
-                    <h2 class="slide-price">KSH3000</h2>
-                    <button class="btn btn-primary">BUY NOW</button>
-                </div>
-            </div>
-            
-            <div class="slide">
-                <img src="images/men wear no bg.png" alt="Men's Fashion" class="slide-img">
-                <div class="slide-content">
-                    <h1 class="slide-title">Men's <br> Fashion</h1>
-                    <h2 class="slide-price">KSH5000</h2>
-                    <button class="btn btn-primary">BUY NOW</button>
-                </div>
-            </div>
-            
-            <div class="slide">
-                <img src="images/girl kid png.png" alt="Kids Wear" class="slide-img">
-                <div class="slide-content">
-                    <h1 class="slide-title">Adorable <br> Kids</h1>
-                    <h2 class="slide-price">KSH1500</h2>
-                    <button class="btn btn-primary">BUY NOW</button>
-                </div>
-            </div>
-            
-            <div class="slide">
-                <img src="images/sneaker white no bg.png" alt="Shoes" class="slide-img">
-                <div class="slide-content">
-                    <h1 class="slide-title">Sneakers</h1>
-                    <h2 class="slide-price">KSH3000</h2>
-                    <button class="btn btn-primary">BUY NOW</button>
-                </div>
-            </div>
-            
-            <div class="slide">
-                <img src="images/green purse.png" alt="Accessories" class="slide-img">
-                <div class="slide-content">
-                    <h1 class="slide-title">Accessories</h1>
-                    <h2 class="slide-price">KSH1500</h2>
-                    <button class="btn btn-primary">BUY NOW</button>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Navigation Arrows -->
-        <button class="slider-nav prev">&#10094;</button>
-        <button class="slider-nav next">&#10095;</button>
-        
-        <!-- Indicators -->
-        <div class="slider-indicators"></div>
-    </div>
-        
-    <div class="features">
-        <div class="feature"></div>
-        <h2 class="features-title">Why Choose Us?</h2>
-        <div class="feature-item">
-            <img src="images/truck-arrow-right-solid.svg" alt="Fast Delivery" class="feature-icon">
-            <h3 class="feature-title">Fast Delivery</h3>
-            <p class="feature-description">Get your products delivered within 24 hours.</p>
-        </div>
-        <div class="feature"></div>
-        <div class="feature-item">
-            <img src="images/right-left-solid.svg" alt="30 days return" class="feature-icon">
-            <h3 class="feature-title">30 Days Return</h3>
-            <p class="feature-description">No question return and easy refund in 14 days.</p>
-        </div>
-        <div class="feature"></div>
-        <div class="feature-item">
-            <img src="images/gift-solid.svg" alt="Gift Cards" class="feature-icon">
-            <h3 class="feature-title">GIFT CARDS</h3>
-            <p class="feature-description">Buy gift cards easily.</p>
-        </div>   
-        <div class="feature"></div>
-        <div class="feature-item">
-            <img src="images/envelope-circle-check-solid.svg" alt="Contact Us" class="feature-icon">
-            <h3 class="feature-title">CONTACT US!</h3>
-            <p class="feature-description">Keep in touch via Email.</p>
-        </div>
-    </div>
+    <button class="harmburger-menu" id="hamburger-menu">
+        <i class="fas fa-bars"></i>
+    </button>
 
-        <div class="product">
-            <img src="images/women fashion/1930s Solid Blouse & Suspender Pants.jpeg" alt="women Product" class="product-img">
-            <div class="productdetails">
-                <h3 class="product-title">Blouse & Suspender Pants</h3>
-                <h3 class="product-price">KSH 2500</h3>
-                <p class="product-description">stylish blouse and suspender pants set.</p>
+    <!-- Slider Section -->
+    <div class="slider">
+    <div class="slider-wrapper">
+        <div class="slide active">
+            <img src="images/women fashion/slider img 3.png" alt="Women's Fashion" class="slide-img">
+            <div class="slide-content">
+                <h1 class="slide-title">Authentic <br> Fashion</h1>
+                <h2 class="slide-price">KSH3000</h2>
                 <button class="btn btn-primary">BUY NOW</button>
             </div>
         </div>
-</div>
+        
+        <div class="slide">
+            <img src="images/men wear no bg.png" alt="Men's Fashion" class="slide-img">
+            <div class="slide-content">
+                <h1 class="slide-title">Men's <br> Fashion</h1>
+                <h2 class="slide-price">KSH5000</h2>
+                <button class="btn btn-primary">BUY NOW</button>
+            </div>
+        </div>
+        
+        <div class="slide">
+            <img src="images/girl kid png.png" alt="Kids Wear" class="slide-img">
+            <div class="slide-content">
+                <h1 class="slide-title">Adorable <br> Kids</h1>
+                <h2 class="slide-price">KSH1500</h2>
+                <button onclick="buyNow" class="btn btn-primary">BUY NOW</button>
+            </div>
+        </div>
+        
+        <div class="slide">
+            <img src="images/sneaker white no bg.png" alt="Shoes" class="slide-img">
+            <div class="slide-content">
+                <h1 class="slide-title">Sneakers</h1>
+                <h2 class="slide-price">KSH3000</h2>
+                <button class="btn btn-primary">BUY NOW</button>
+            </div>
+        </div>
+        
+        <div class="slide">
+            <img src="images/green purse.png" alt="Accessories" class="slide-img">
+            <div class="slide-content">
+                <h1 class="slide-title">Accessories</h1>
+                <h2 class="slide-price">KSH1500</h2>
+                <button class="btn btn-primary">BUY NOW</button>
+            </div>
+        </div>
+    </div>
 
-    <script src="script.js"></script>
-</body>
-</html>
+    <!-- Navigation Arrows -->
+    <button class="slider-nav prev">&#10094;</button>
+    <button class="slider-nav next">&#10095;</button>
+
+    <!-- Indicators -->
+    <div class="slider-indicators"></div>
+    </div>
+
+    <div class="features">
+    <div class="feature"></div>
+    <h2 class="features-title">Why Choose Us?</h2>
+    <div class="feature-item">
+        <img src="images/truck-arrow-right-solid.svg" alt="Fast Delivery" class="feature-icon">
+        <h3 class="feature-title">Fast Delivery</h3>
+        <p class="feature-description">Get your products delivered within 24 hours.</p>
+    </div>
+    <div class="feature"></div>
+    <div class="feature-item">
+        <img src="images/right-left-solid.svg" alt="30 days return" class="feature-icon">
+        <h3 class="feature-title">30 Days Return</h3>
+        <p class="feature-description">No question return and easy refund in 14 days.</p>
+    </div>
+    <div class="feature"></div>
+    <div class="feature-item">
+        <img src="images/gift-solid.svg" alt="Gift Cards" class="feature-icon">
+        <h3 class="feature-title">GIFT CARDS</h3>
+        <p class="feature-description">Buy gift cards easily.</p>
+    </div>   
+    <div class="feature"></div>
+    <div class="feature-item">
+        <img src="images/envelope-circle-check-solid.svg" alt="Contact Us" class="feature-icon">
+        <h3 class="feature-title">CONTACT US!</h3>
+        <p class="feature-description">Keep in touch via Email.</p>
+    </div>
+    </div>
+
+    
+
+    <!-- products section -->
+    <section id="product-list" class="product-grid"></section>
+
+    <!-- products will be added here dynamically -->
+
+    </div>
+  <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">BEU</div>
+                    <p class="footer-tagline">Your premier online fashion destination</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="links-column">
+                        <h3 class="links-title">Shop</h3>
+                        <ul class="links-list">
+                            <li><a href="#">Women's Fashion</a></li>
+                            <li><a href="#">Men's Fashion</a></li>
+                            <li><a href="#">Kid's Wear</a></li>
+                            <li><a href="#">Shoes & Footwear</a></li>
+                            <li><a href="#">Accessories</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="links-column">
+                        <h3 class="links-title">Help</h3>
+                        <ul class="links-list">
+                            <li><a href="#">Customer Service</a></li>
+                            <li><a href="#">Track Order</a></li>
+                            <li><a href="#">Returns & Exchanges</a></li>
+                            <li><a href="#">Shipping Info</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="links-column">
+                        <h3 class="links-title">Company</h3>
+                        <ul class="links-list">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="links-column">
+                        <h3 class="links-title">Contact</h3>
+                        <ul class="links-list">
+                            <li><i class="fas fa-map-marker-alt"></i> Machakos</li>
+                            <li><i class="fas fa-phone"></i> 0705607314</li>
+                            <li><i class="fas fa-envelope"></i> hello@beuboutique.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+                <div class="copyright">
+                    &copy; 2025 BEU Online Boutique. Crafted by Chris Ngatia. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    </div>
+
+    <script src="script.js" defer></script>
+        <script src="products.js" defer></script>
+    <script src="cart.js" defer></script>
+    
+    </body>
+    </html>

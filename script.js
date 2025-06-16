@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const slideCount = slides.length;
   let slideInterval;
   
-  // Create indicators
+  // indicators
   function createIndicators() {
     slides.forEach((_, index) => {
       const indicator = document.createElement('div');
@@ -139,6 +139,36 @@ document.addEventListener('DOMContentLoaded', function() {
   menuItems.forEach(item => {
     item.addEventListener('mouseenter', () => {
       // Add any additional hover effects here
+    });
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburgerMenu = document.getElementById('hamburger-menu');
+  const navMenu = document.querySelector('.nav-menu');
+  
+  hamburgerMenu.addEventListener('click', function() {
+    navMenu.classList.toggle('active');
+    
+    // Toggle hamburger icon between bars and X
+    const icon = this.querySelector('i');
+    if (navMenu.classList.contains('active')) {
+      icon.classList.remove('fa-bars');
+      icon.classList.add('fa-times');
+    } else {
+      icon.classList.remove('fa-times');
+      icon.classList.add('fa-bars');
+    }
+  });
+  
+  // Close menu when clicking on a link (optional)
+  const navLinks = document.querySelectorAll('.nav-menu a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('active');
+      const icon = hamburgerMenu.querySelector('i');
+      icon.classList.remove('fa-times');
+      icon.classList.add('fa-bars');
     });
   });
 });
