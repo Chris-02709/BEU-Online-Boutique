@@ -243,6 +243,69 @@
   box-shadow: var(--shadow-md);
 }
 
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+    margin-left: 12px;
+}
+
+.login-btn, .register-btn {
+    padding: 8px 20px;
+    border-radius: var(--border-radius);
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.login-btn {
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.login-btn:hover {
+    background-color: var(--secondary);
+    color: white;
+}
+
+.register-btn {
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+    color: white;
+}
+
+.register-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .nav-container {
+        flex-wrap: wrap;
+    }
+    
+    .search-bar {
+        order: 1;
+        min-width: 100%;
+        margin-top: 15px;
+    }
+    
+    .nav-menu {
+        overflow-x: auto;
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .limited-offer {
+        display: none;
+    }
+    
+    .auth-buttons {
+        margin-left: auto;
+    }
+}
+
 /* Hamburger Menu Styles */
 .harmburger-menu {
   display: none;
