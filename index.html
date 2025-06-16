@@ -9,11 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>BEU Online Boutique</title>
+    
     </head>
     <body>
     <nav>
     <div class="nav-container">
-        <div class="logo-text">BEU</div>
+        <div class="logo-text">
+            <a href="index.html">BEU</a>           
+        </div>
         
         <div class="search-bar">
             <input type="text" placeholder="Search products..." class="search-input">
@@ -22,18 +25,30 @@
         
         <div class="limited-offer">Limited Offer!</div>
         
-        <div class="nav-menu">
-            <div class="menu-item">Women's Fashion</div>
-            <div class="menu-item">Men's Fashion</div>
-            <div class="menu-item">Kid's Wear</div>
-            <div class="menu-item">Shoes & Footwear</div>
-            <div class="menu-item">Accessories</div>
-        </div>
+  <div class="nav-menu">
+    <a href="index.html">Home</a>
+   <a href="products.html?category=women">Women's Fashion</a>
+  <a href="products.html?category=men">Men's Fashion</a>
+  <a href="products.html?category=kids">Kid's Wear</a>
+  <a href="products.html?category=footwear">Shoes & Footwear</a>
+  <a href="products.html?category=accessories">Accessories</a>
+</div>
 
+
+             <!-- cart button -->
+         <a href="my-cart.html" class="cart-btn">
+            <img src="images/cart icon.png" alt="Cart" class="cart-icon">
+            <span id="cart-count">0</span>
+        </a>
    
     </div>
     </nav>
 
+    <button class="harmburger-menu" id="hamburger-menu">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Slider Section -->
     <div class="slider">
     <div class="slider-wrapper">
         <div class="slide active">
@@ -59,7 +74,7 @@
             <div class="slide-content">
                 <h1 class="slide-title">Adorable <br> Kids</h1>
                 <h2 class="slide-price">KSH1500</h2>
-                <button class="btn btn-primary">BUY NOW</button>
+                <button onclick="buyNow" class="btn btn-primary">BUY NOW</button>
             </div>
         </div>
         
@@ -118,12 +133,26 @@
     </div>
     </div>
 
-    <!-- Products Section -->
+    
+
+    <!-- products section -->
+    <section id="product-list" class="product-grid"></section>
+
     <!-- products will be added here dynamically -->
 
+    </div>
+    <footer>    
+    <div class="footer-container">
+        <div class="footer-logo">
+            
+    </footer>
+
+
+    </div>
+
+    <script src="script.js" defer></script>
+        <script src="products.js" defer></script>
+    <script src="cart.js" defer></script>
     
-    </div>
-    </div>
-    <script src="script.js"></script>
     </body>
     </html>
