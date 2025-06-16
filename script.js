@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const slideCount = slides.length;
   let slideInterval;
   
-  // Create indicators
+  // indicators
   function createIndicators() {
     slides.forEach((_, index) => {
       const indicator = document.createElement('div');
@@ -143,173 +143,32 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-
-// Products data
-//added products with images and descriptions dynamically
-const products = [
-  {
-    title: "Blouse & Suspender Pants",
-    price: "KSH 2500",
-    description: "Stylish blouse and suspender pants set.",
-    image: "images/women fashion/1930s Solid Blouse & Suspender Pants.jpeg"
-  },
-  {
-    title: "Men Official Wear",
-    price: "KSH 6500",
-    description: "Stylish combo.",
-    image: "images/men wear no bg.png"
-  },
-  {
-    title: "Summer Kids Fashion",
-    price: "KSH 3500",
-    description: "Stylish kids outfit.",
-    image: "images/kids fashion/Get your little fashionista ready for the summer….jpeg"
-  },
-  {
-    title: "Leather Jacket",
-    price: "KSH 1500",
-    description: "Stylish leather jacket.",
-    image: "images/women fashion/Abercrombie & Fitch _ Authentic American clothing since 1892.jpeg"
-  },
-  {
-    title: "Cotton Shirt",
-    price: "KSH 1000",
-    description: "White striped shirt.",
-    image: "images/men fashion/Eleganz trifft Komfort - Ihr perfekter….jpeg"
-  },
-  {
-    title: "Rugged Jeans",
-    price: "KSH 1500",
-    description: "Stylish rugged jeans.",
-    image: "images/men fashion/Hign-concerned Chemical _ none Craft of Weaving… (1).jpeg"
-  },
-  {
-    title: "Winter Outfits For Women",
-    price: "KSH 5500",
-    description: "Stylish winter set.",
-    image: "images/women fashion/40+ Super Stylish Winter Outfits for Women 2024.jpeg"
-  },
-  {
-    title: "Floral Lace Dress",
-    price: "KSH 2500",
-    description: "Stylish floral lace dress.",
-    image: "images/women fashion/HomRain Women's Elegant Floral Lace Dress Off The Shoulder High Low Hem Dresses for Wedding for Cocktail for Party.jpeg"
-  },
-  {
-    title: "Gorro Adidas Cuff Knit",
-    price: "KSH 1000",
-    description: "Cuff knit unisex.",
-    image: "images/accessories/GORRO ADIDAS AC CUFF KNIT UNISEX.jpeg"
-  },
-  {
-    title: "Kids Fashion",
-    price: "KSH 3500",
-    description: "Gray boys wear.",
-    image: "images/kids fashion/4aace87d-4a20-4ff7-b3e0-ce58e6238462.jpeg"
-  },
-  {
-    title: "Nike Sneaker",
-    price: "KSH 4500",
-    description: "Heart of basketball culture.",
-    image: "images/shoes & footwear/Born from the heart of basketball culture and….jpeg"
-  },
-  {
-    title: "Women Fashion",
-    price: "KSH 6500",
-    description: "Stylish set.",
-    image: "images/women fashion/7559.jpg"
-  },
-  {
-    title: "Trucker Cap",
-    price: "KSH 500",
-    description: "Black trucker cap with a mesh back.",
-    image: "images/accessories/This six-panel trucker cap with a mesh back will….jpeg"
-  },
-  {
-    title: "Dress",
-    price: "KSH 1500",
-    description: "Stylish dress.",
-    image: "images/kids fashion/Brand Name_ jumping metersAge Range_ 13-24mAge….jpeg"
-  },
-  {
-    title: "Gray Suit",
-    price: "KSH 4500",
-    description: "Stylish suit.",
-    image: "images/men fashion/download.jpeg"
-  },
-  {
-    title: "Adjustable Silver Rings",
-    price: "KSH 5000",
-    description: "Stainless steel jewelry for women.",
-    image: "images/accessories/Chic Adjustable Silver Alphabet Rings - A-Z Initials, Stainless Steel Fashion Jewelry for Women - Resizable _ Platinum _ T.jpeg"
-  },
-  {
-    title: "Men Shorts",
-    price: "KSH 900",
-    description: "Stylish shorts.",
-    image: "images/men fashion/Product information_ Color_ black, gray, brown….jpeg"
-  },
-  {
-    title: "Kids Fashion",
-    price: "KSH 100",
-    description: "stylish kids.",
-    image: "images/kids fashion/4aace87d-4a20-4ff7-b3e0-ce58e6238462.jpeg"
-  },
-  {
-    title: "Women Fashion",
-    price: "KSH 6500",
-    description: "Stylish set.",
-    image: "images/women fashion/15668.jpg"
-  },
-  {
-    title: "Designer Shirt",
-    price: "KSH 2000",
-    description: "Stylish designer shirt.",
-    image: "images/men fashion/clothes.jpeg"
-  },
-  {
-    title: "Elegant Leather Purse",
-    price: "KSH 4000",
-    description: "khaki colorblock square purse.",
-    image: "images/accessories/Khaki Elegant Collar  PU Leather Colorblock Square….jpeg"
-  },
-  {
-    title: "Track Pants",
-    price: "KSH 1000",
-    description: "gray track pants",
-    image: "images/men fashion/Track pants featuring a grey cotton fabric with….jpeg"
-  },
-  {
-    title: "Slides",
-    price: "KSH 1500",
-    description: "men slides",
-    image: "images/shoes & footwear/Hign-concerned Chemical _ None Style _ LEISURE….jpeg"
-  },
-  {
-    title: "Wood Watch",
-    price: "KSH 3500",
-    description: "Stylish wood watch.",
-    image: "images/accessories/Product information_ Material_ Wood Target….jpeg"
-  }
-];
-
-// Grab the container
-const container = document.createElement('div');
-container.classList.add('product-grid');
-document.body.appendChild(container);
-
-// Loop and render
-products.forEach(product => {
-  const productEl = document.createElement('div');
-  productEl.classList.add('product');
-  productEl.innerHTML = `
-    <img src="${product.image}" alt="${product.title}" class="product-img">
-    <div class="productdetails">
-      <h3 class="product-title">${product.title}</h3>
-      <h3 class="product-price">${product.price}</h3>
-      <p class="product-description">${product.description}</p>
-      <button class="btn btn-primary">BUY NOW</button>
-    </div>
-  `;
-  container.appendChild(productEl);
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburgerMenu = document.getElementById('hamburger-menu');
+  const navMenu = document.querySelector('.nav-menu');
+  
+  hamburgerMenu.addEventListener('click', function() {
+    navMenu.classList.toggle('active');
+    
+    // Toggle hamburger icon between bars and X
+    const icon = this.querySelector('i');
+    if (navMenu.classList.contains('active')) {
+      icon.classList.remove('fa-bars');
+      icon.classList.add('fa-times');
+    } else {
+      icon.classList.remove('fa-times');
+      icon.classList.add('fa-bars');
+    }
+  });
+  
+  // Close menu when clicking on a link (optional)
+  const navLinks = document.querySelectorAll('.nav-menu a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('active');
+      const icon = hamburgerMenu.querySelector('i');
+      icon.classList.remove('fa-times');
+      icon.classList.add('fa-bars');
+    });
+  });
 });

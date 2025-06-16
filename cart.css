@@ -1,0 +1,121 @@
+/* === Cart Page Styles === */
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F5F5F5;
+  color: #1C1C1C;
+}
+
+.navbar {
+  /* style this however your existing nav is styled */
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-container {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.cart-container h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #E0E0E0;
+  padding-bottom: 0.5rem;
+}
+
+#cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Individual Cart Item */
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FAFAFA;
+  padding: 1rem;
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+}
+
+.cart-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.cart-item-details {
+  flex: 1;
+  margin-left: 1rem;
+}
+
+.cart-item-details h3 {
+  font-size: 1.1rem;
+  margin: 0 0 0.3rem;
+}
+
+.cart-item-details p {
+  margin: 0;
+  color: #555;
+}
+
+.cart-item-price {
+  font-weight: bold;
+  color: #00BCD4;
+}
+
+/* Cart Summary */
+.cart-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  padding-top: 1rem;
+  border-top: 2px solid #E0E0E0;
+}
+
+#checkout-btn {
+  background-color: #00BCD4;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#checkout-btn:hover {
+  background-color: #00ACC1;
+}
+
+.cart-notification {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #4CAF50;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  z-index: 1000;
+  transition: opacity 0.5s;
+}
+.cart-notification.fade-out {
+  opacity: 0;
+}
